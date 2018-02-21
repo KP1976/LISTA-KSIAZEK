@@ -15,29 +15,26 @@
     <form class="book-form">
       <div class="book-input-wrapper">
         <label class="book-label">Tytuł książki</label>
-        <input class="book-input" type="text">
+        <input class="book-input book-title" type="text">
       </div>
       <div class="book-input-wrapper">
         <label class="book-label">Autor książki</label>
-        <input class="book-input" type="text">
+        <input class="book-input book-author" type="text">
       </div>
       <div class="book-input-wrapper">
         <label class="book-label">Cena</label>
-        <input class="book-input" type="text">
+        <input class="book-input book-price" type="text">
       </div>
     </form>
+    <div class="warning">Źle podałeś cenę! To musi być liczba.</div>
     <button class="addbook-btn" type="submit">Dodaj</button>
   </main>
-  <table class="book-list">
-    <thead class="table-head">
-      <tr class="table-row">
-        <th class="table-head-name">Tytuł</th>
-        <th class="table-head-name">Autor</th>
-        <th class="table-head-name">Cena</th>
-      </tr>
-    </thead>
-    <tbody class="book-body"></tbody>
-  </table>
+  <section class="book-list">
+    <h2 class="book-list-head">Tytuł</h2>
+    <h2 class="book-list-head">Autor</h2>
+    <h2 class="book-list-head">Cena</h2>
+    <h2 class="book-list-head"> </h2>
+  </section>
 
   <script src="js/vars.js"></script>
   <script src="js/books.js"></script> 

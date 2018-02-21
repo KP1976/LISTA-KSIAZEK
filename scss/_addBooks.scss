@@ -53,6 +53,17 @@
   }
 }
 
+.warning {
+  background: var(--background-clr);
+  border-radius: var(--border-radius);
+  display: none;
+  font-family: var(--titles-font);
+  font-size: 2rem;
+  margin-bottom: var(--main-margin);
+  padding: 0.5rem 0;
+  text-align: center;
+}
+
 .addbook-btn {
   background-color: var(--background-clr);
   border-radius: var(--border-radius);
