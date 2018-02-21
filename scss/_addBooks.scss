@@ -1,0 +1,78 @@
+.box {
+  background-color: var(--background-clr-secondary);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  flex-direction: column;
+  margin-bottom: var(--main-margin);
+  width: 100%;
+  padding: var(--container-padding);
+  @media screen and (min-width: 640px) {
+    width: 50rem;
+  }
+}
+
+.title {
+  font-family: var(--titles-font);
+  font-size: var(--title-font-size);
+  text-align: center;
+  text-transform: uppercase;
+  @media screen and (min-width: 640px) {
+    --title-font-size: 4rem;
+  }
+}
+
+.book-form {
+  display: grid;
+  grid-row-gap: var(--grid-row-gap);
+  margin: var(--main-margin) 0;
+}
+
+.book-input-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.book-label {
+  font-family: var(--titles-font);
+  font-size: var(--labels-font-size);
+  margin-bottom: .5rem;
+  @media screen and (min-width: 640px) {
+    --labels-font-size: 2rem;
+  }
+}
+
+.book-input {
+  border-radius: var(--border-radius);
+  border: none;
+  font-family: var(--text-font);
+  font-size: var(--main-font-size);
+  outline-color: var(--outline-clr);
+  padding: var(--input-padding);
+  @media screen and (min-width: 640px) {
+    --main-font-size: 1.6rem;
+  }
+}
+
+.addbook-btn {
+  background-color: var(--background-clr);
+  border-radius: var(--border-radius);
+  border: none;
+  box-shadow: var(--box-shadow);
+  color: var(--text-clr);
+  cursor: pointer;
+  display: block;
+  font-family: var(--titles-font);
+  font-size: var(--button-font-size);
+  font-weight: 700;
+  margin: 0 auto;
+  outline: none;
+  padding: var(--button-vertical-padding) var(--button-horizontal-padding);
+  text-transform: uppercase;
+  transition: all .2s ease-in-out;
+  width: 150px;
+  &:hover {
+    background-color: var(--text-clr);
+    box-shadow: none;
+    color: var(--background-clr);
+  }
+}

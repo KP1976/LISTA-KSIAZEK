@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href='https://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/styles.css" type="text/css">
+  <title>Sklep z książkami</title>
+</head>
+<body>
+  <main class="box">
+    <h1 class="title">Dodaj książkę</h1>
+    <form class="book-form">
+      <div class="book-input-wrapper">
+        <label class="book-label">Tytuł książki</label>
+        <input class="book-input" type="text">
+      </div>
+      <div class="book-input-wrapper">
+        <label class="book-label">Autor książki</label>
+        <input class="book-input" type="text">
+      </div>
+      <div class="book-input-wrapper">
+        <label class="book-label">Cena</label>
+        <input class="book-input" type="text">
+      </div>
+    </form>
+    <button class="addbook-btn" type="submit">Dodaj</button>
+  </main>
+  <table class="book-list">
+    <thead class="table-head">
+      <tr class="table-row">
+        <th class="table-head-name">Tytuł</th>
+        <th class="table-head-name">Autor</th>
+        <th class="table-head-name">Cena</th>
+      </tr>
+    </thead>
+    <tbody class="book-body"></tbody>
+  </table>
+
+  <script src="js/vars.js"></script>
+  <script src="js/books.js"></script> 
+</body>
+</html>
