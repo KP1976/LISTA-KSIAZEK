@@ -1,12 +1,12 @@
-document.addEventListener('DOMContentLoaded', _=> {
+document.addEventListener('DOMContentLoaded', function() {
   Books.init({
-    bookTitle: document.querySelector('.book-title'),
-    bookAuthor: document.querySelector('.book-author'),
-    bookPrice: document.querySelector('.book-price'),
-    box: document.querySelector('.box'),
-    warning: document.querySelector('.warning'),
-    addBookBtn: document.querySelector('.addbook-btn'),
-    bookList: document.querySelector('.book-list'),
-    bookRow: document.querySelector('.book-list-row') 
+    bookTitle: this.querySelector('.book-title'),
+    bookAuthor: this.querySelector('.book-author'),
+    bookPrice: this.querySelector('.book-price'),
+    box: this.querySelector('.box'),
+    warning: this.querySelector('.warning'),
+    addBookBtn: this.querySelector('.addbook-btn'),
+    bookList: this.querySelector('.book-list'),
+    bookRow: this.querySelector('.book-list-row')
   });
 });
