@@ -1,4 +1,6 @@
 const Books = (_=> {
+  const ls = new LS();
+
   // Funkcja dodawania książki
   function addBook() {
     const bookValues = {
@@ -16,6 +18,8 @@ const Books = (_=> {
       vars.bookList.classList.add('is-visible');
       createBook(bookValues);
     }
+
+    ls.saveBookInLocalStorage(bookValues);
 
     vars.bookTitle.value = '';
     vars.bookAuthor.value = '';
@@ -54,9 +58,14 @@ const Books = (_=> {
   function init(_vars) {
     vars = _vars;
 
+    vars.bookList.classList.add('is-visible');
+    ls.showBooksFromLocalSotrage();
     vars.addBookBtn.addEventListener('click', addBook);
     vars.bookList.addEventListener('click', delBook);
   }
 
-  return { init };
+  return { 
+    init, 
+    createBook 
+  };
 })();

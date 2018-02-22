@@ -6,7 +6,6 @@ document.addEventListener('DOMContentLoaded', function() {
     box: this.querySelector('.box'),
     warning: this.querySelector('.warning'),
     addBookBtn: this.querySelector('.addbook-btn'),
-    bookList: this.querySelector('.book-list'),
-    bookRow: this.querySelector('.book-list-row')
+    bookList: this.querySelector('.book-list')
   });
 });
