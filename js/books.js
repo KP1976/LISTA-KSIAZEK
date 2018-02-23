@@ -48,17 +48,19 @@ const Books = (_=> {
       e.target.parentNode.remove();
     }
 
+    ls.removeFromLocalStorage(e.target.previousElementSibling.previousElementSibling.textContent);
+
     // Jeżeli ostatnia książka zostanie usunięta, to znika cała lista
     const rows = document.querySelectorAll('.book-list-row');
     if(rows.length === 0) { 
       this.classList.remove('is-visible');
     }
+
   }
 
   function init(_vars) {
     vars = _vars;
 
-    vars.bookList.classList.add('is-visible');
     ls.showBooksFromLocalSotrage();
     vars.addBookBtn.addEventListener('click', addBook);
     vars.bookList.addEventListener('click', delBook);
